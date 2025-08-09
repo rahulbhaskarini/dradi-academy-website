@@ -3,21 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>DR.ADI Academy</title>
+    
+    <!-- Favicons -->
+    <link rel="icon" href="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png" type="image/png">
+    <link rel="apple-touch-icon" href="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png">
+    
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      var pathSegmentsToKeep = 0;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Single Page App 404 handler for Hostinger
+      // Redirect to index.html with the path as a query parameter
+      var currentPath = window.location.pathname;
+      var currentSearch = window.location.search;
+      var currentHash = window.location.hash;
+      
+      // Only redirect if it's not already the home page
+      if (currentPath !== '/' && currentPath !== '/index.html') {
+        // Construct the redirect URL
+        var redirectUrl = '/' + '?redirect=' + encodeURIComponent(currentPath + currentSearch + currentHash);
+        window.location.replace(redirectUrl);
+      }
     </script>
   </head>
   <body>
+    <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
+      <h1>DR.ADI Academy</h1>
+      <p>Redirecting...</p>
+      <p>If you are not redirected automatically, <a href="/">click here</a>.</p>
+    </div>
+  </body>
+</html>
   </body>
 </html>

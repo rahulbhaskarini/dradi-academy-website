@@ -1,1 +1,8 @@
+# Netlify redirects for SPA
 /*    /index.html   200
+
+# Force HTTPS (optional)
+# http://dradiacademy.rahulbhaskarini.com/*    https://dradiacademy.rahulbhaskarini.com/:splat  301!
+
+# API redirects (if needed)
+# /api/*  https://your-api-domain.com/api/:splat  200

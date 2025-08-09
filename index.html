@@ -46,9 +46,20 @@
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
     
-    <!-- GitHub Pages SPA routing script -->
+    <!-- SPA routing script for Hostinger -->
     <script type="text/javascript">
-      (function(l) {
+      (function() {
+        // Handle redirects from 404 page
+        var urlParams = new URLSearchParams(window.location.search);
+        var redirectPath = urlParams.get('redirect');
+        
+        if (redirectPath) {
+          // Remove the redirect parameter and navigate to the intended path
+          window.history.replaceState(null, null, redirectPath);
+        }
+        
+        // Legacy GitHub Pages compatibility
+        var l = window.location;
         if (l.search[1] === '/' ) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
@@ -57,7 +68,7 @@
               l.pathname.slice(0, -1) + decoded + l.hash
           );
         }
-      }(window.location))
+      })();
     </script>
   </head>
 
