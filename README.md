@@ -1,73 +1,181 @@
-# Welcome to your Lovable project
+# DR.ADI Academy Website
 
-## Project info
+**Transform Your Life with Proven Training Programs**
 
-**URL**: https://lovable.dev/projects/e9a3d6f0-c46e-4cb6-8677-5b9f21e45082
+A modern, responsive website for DR.ADI Academy - a leading life coaching and personal development training institute based in Miyapur, Hyderabad. This website showcases comprehensive training programs in Law of Attraction, NLP, Mind Power, Habit Mastery, and more.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+### **Core Functionality**
+- ✅ **Mobile-Optimized Navigation** - Smooth scrolling and touch-friendly interface
+- ✅ **Clickable Phone Numbers** - Direct calling functionality throughout the site
+- ✅ **Single Page Application** - Fast React Router navigation without page reloads
+- ✅ **SEO Optimized** - Complete meta tags and structured data
+- ✅ **Responsive Design** - Perfect experience on all devices
 
-**Use Lovable**
+### **Training Programs**
+- **Law of Attraction** - Master the art of manifestation
+- **NLP (Neuro-Linguistic Programming)** - Reprogram your mind for success
+- **Subconscious Mind Power** - Unlock unlimited potential
+- **Mind Mastery** - Advanced mental conditioning techniques
+- **5 AM Club** - Morning routine transformation
+- **Habit Mastery** - Build unstoppable success habits
+- **Millionaire Mind** - Wealth consciousness development
+- **Emotional Intelligence** - Master your emotions
+- **Personal Coaching** - One-on-one transformation sessions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e9a3d6f0-c46e-4cb6-8677-5b9f21e45082) and start prompting.
+### **Contact & Social Integration**
+- 📞 **Direct Phone Integration** - `tel:+918978544550`
+- 📧 **Email Contact Forms** - Professional inquiry system
+- 🌐 **Social Media Links** - Facebook, Instagram, YouTube, LinkedIn
+- 📍 **Location Details** - Miyapur, Hyderabad center information
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Quick Start
 
-**Use your preferred IDE**
+### Prerequisites
+- Node.js 18+ installed ([Download here](https://nodejs.org/))
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation & Development
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/dradi-academy-website.git
 
-Follow these steps:
+# Navigate to project directory
+cd dradi-academy-website
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Open http://localhost:5173 in your browser
 ```
 
-**Edit a file directly in GitHub**
+### Build for Production
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Create production build
+npm run build
 
-**Use GitHub Codespaces**
+# Preview production build locally
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🛠️ Technology Stack
 
-## What technologies are used for this project?
+This project is built with modern web technologies:
 
-This project is built with:
+- **⚡ Vite** - Lightning-fast build tool and dev server
+- **⚛️ React 18** - Modern React with hooks and concurrent features
+- **🔷 TypeScript** - Type-safe development experience
+- **🎨 Tailwind CSS** - Utility-first CSS framework
+- **🧩 shadcn/ui** - Beautiful, accessible UI components
+- **🛣️ React Router** - Client-side routing and navigation
+- **📱 Responsive Design** - Mobile-first approach
+- **🔍 SEO Optimized** - Search engine friendly structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📁 Project Structure
 
-## How can I deploy this project?
+```
+src/
+├── components/           # Reusable UI components
+│   ├── Layout/          # Header, Footer, Layout components
+│   ├── Sections/        # Page sections (Hero, Trainings, etc.)
+│   └── ui/              # shadcn/ui components
+├── pages/               # Route components
+│   ├── trainings/       # Training program pages
+│   └── other-trainings/ # Additional training programs
+├── assets/              # Images and static files
+├── lib/                 # Utility functions and config
+└── hooks/               # Custom React hooks
+```
 
-Simply open [Lovable](https://lovable.dev/projects/e9a3d6f0-c46e-4cb6-8677-5b9f21e45082) and click on Share -> Publish.
+## 🚀 Deployment
 
-## Can I connect a custom domain to my Lovable project?
+The website is configured for deployment on multiple platforms:
 
-Yes, you can!
+### **Netlify** (Recommended)
+```bash
+# Build and deploy to Netlify
+npm run build
+# Upload dist/ folder to Netlify
+# Uses _redirects file for SPA routing
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### **Vercel**
+```bash
+# Automatic deployment with vercel.json configuration
+npm run build
+# Deploy using Vercel CLI or GitHub integration
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### **GitHub Pages**
+```bash
+# Uses 404.html for client-side routing
+npm run build
+# Deploy dist/ folder to gh-pages branch
+```
+
+### **Firebase Hosting**
+```bash
+# Configure with firebase.json
+npm run build
+firebase deploy
+```
+
+### **Apache/cPanel**
+```bash
+# Uses .htaccess for URL rewriting
+npm run build
+# Upload dist/ contents to public_html/
+```
+
+## 🔧 Configuration Files
+
+The project includes deployment configuration for all major platforms:
+
+- **`public/_redirects`** - Netlify routing configuration
+- **`vercel.json`** - Vercel deployment settings
+- **`public/.htaccess`** - Apache server configuration
+- **`public/404.html`** - GitHub Pages SPA routing
+- **`firebase.json`** - Firebase hosting configuration
+
+## 📞 Contact Information
+
+- **Phone:** +91 8978544550
+- **Email:** info@dradiacademy.com
+- **Location:** Miyapur, Hyderabad, Telangana
+- **Website:** [dradiacademy.com](https://dradiacademy.com)
+
+## 🌐 Social Media
+
+- **Facebook:** [@dradiglobalacademy](https://www.facebook.com/dradiglobalacademy)
+- **Instagram:** [@dradiglobalacademy](https://www.instagram.com/dradiglobalacademy)
+- **YouTube:** [DR.ADI Academy Channel](https://www.youtube.com/@dradiglobalacademy)
+- **LinkedIn:** [Dr. ANR Profile](https://www.linkedin.com/in/adinarayana-reddy-kadapa-70a97015)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary to DR.ADI Academy. All rights reserved.
+
+## 🙏 Acknowledgments
+
+- Built with modern React ecosystem
+- UI components from shadcn/ui
+- Icons from Lucide React
+- Images and content by DR.ADI Academy team
+
+---
+
+**© 2025 DR.ADI Academy - Transform Your Life with Proven Training Programs**
