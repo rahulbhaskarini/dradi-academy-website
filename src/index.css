@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DR.ADI Academy Design System - Transform Your Life
+Modern, energetic design with soft blues and whites, energetic accents
+All colors MUST be HSL for consistency and theming
+*/
+
+@layer base {
+  :root {
+    /* Base colors - Clean whites and soft backgrounds */
+    --background: 0 0% 100%;
+    --foreground: 220 25% 15%;
+
+    /* Card and surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 220 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 25% 15%;
+
+    /* Primary brand - Deep inspiring blue */
+    --primary: 220 85% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 220 100% 60%;
+
+    /* Secondary - Soft blue tones */
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 25% 15%;
+
+    /* Muted tones */
+    --muted: 210 30% 97%;
+    --muted-foreground: 220 15% 50%;
+
+    /* Accent - Energetic success colors */
+    --accent: 160 85% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 160 100% 60%;
+
+    /* Energy orange for CTAs */
+    --energy: 25 95% 55%;
+    --energy-foreground: 0 0% 100%;
+
+    /* Status colors */
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 160 85% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 95% 60%;
+    --warning-foreground: 0 0% 100%;
+
+    /* UI elements */
+    --border: 220 15% 90%;
+    --input: 220 15% 94%;
+    --ring: 220 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Gradients for beautiful effects */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.95), hsl(var(--accent) / 0.9));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Shadows for depth */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 4px 20px hsl(var(--foreground) / 0.08);
+
+    /* Animation speeds */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Sidebar variables */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 25% 15%;
+    --sidebar-primary: 220 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 30% 97%;
+    --sidebar-accent-foreground: 220 25% 15%;
+    --sidebar-border: 220 15% 90%;
+    --sidebar-ring: 220 85% 45%;
+  }
+
+  .dark {
+    /* Dark theme with inspiring blues */
+    --background: 220 30% 8%;
+    --foreground: 210 40% 95%;
+
+    --card: 220 25% 10%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 220 25% 10%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 220 100% 60%;
+    --primary-foreground: 220 30% 8%;
+    --primary-glow: 220 100% 70%;
+
+    --secondary: 220 20% 15%;
+    --secondary-foreground: 210 40% 95%;
+
+    --muted: 220 20% 12%;
+    --muted-foreground: 220 15% 60%;
+
+    --accent: 160 100% 50%;
+    --accent-foreground: 220 30% 8%;
+    --accent-glow: 160 100% 60%;
+
+    --energy: 25 100% 60%;
+    --energy-foreground: 220 30% 8%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 95%;
+
+    --success: 160 85% 50%;
+    --success-foreground: 220 30% 8%;
+
+    --warning: 45 95% 65%;
+    --warning-foreground: 220 30% 8%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 15%;
+    --ring: 220 100% 60%;
+
+    /* Dark gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-glow)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.9), hsl(var(--accent) / 0.8));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+
+    /* Dark shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.5);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.3);
+
+    --sidebar-background: 220 25% 10%;
+    --sidebar-foreground: 210 40% 95%;
+    --sidebar-primary: 220 100% 60%;
+    --sidebar-primary-foreground: 220 30% 8%;
+    --sidebar-accent: 220 20% 15%;
+    --sidebar-accent-foreground: 210 40% 95%;
+    --sidebar-border: 220 20% 20%;
+    --sidebar-ring: 220 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    transition: var(--transition-smooth);
+    /* Ensure smooth scrolling on mobile */
+    -webkit-overflow-scrolling: touch;
+    touch-action: manipulation;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Better mobile scrolling */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/60;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .animate-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .animate-spring {
+    transition: var(--transition-spring);
+  }
+}

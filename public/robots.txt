@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: /sitemap.html
+
+# DR.ADI Academy - Life Coaching & Personal Development
+# Transform Your Life | Become Unstoppable
+# Contact: +91 8978544550 | adisss2002@rediffmail.com
+# Location: Miyapur, Hyderabad, Telangana, India
