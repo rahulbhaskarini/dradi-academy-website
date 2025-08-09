@@ -60,18 +60,26 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-32 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-3">
-              <img 
-                src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png" 
-                alt="DR.ADI Academy Logo" 
-                className="h-12 w-12 object-contain"
-              />
-              <span className="text-lg md:text-xl font-bold gradient-text">
-                DR.ADI ACADEMY
-              </span>
+            <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+              {/* Logo Image */}
+              <div className="relative h-28 w-28 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png" 
+                  alt="DR.ADI Academy Logo" 
+                  className="h-full w-full object-contain"
+                  loading="eager"
+                />
+              </div>
+              
+              {/* Academy Name */}
+              <div className="flex flex-col">
+                <span className="text-lg md:text-xl font-bold gradient-text leading-tight">
+                  DR.ADI ACADEMY
+                </span>
+              </div>
             </Link>
           </div>
 

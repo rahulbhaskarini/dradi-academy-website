@@ -1,0 +1,23 @@
+{
+  "name": "DR.ADI Academy",
+  "short_name": "DR.ADI Academy",
+  "description": "Transform Your Life with Professional Life Coaching & Personal Development Training",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
