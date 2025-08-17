@@ -16,7 +16,6 @@ import photo9 from "@/assets/Gallery/photo_2025-08-17 18.17.51.jpeg";
 import photo10 from "@/assets/Gallery/photo_2025-08-17 18.20.19.jpeg";
 import photo11 from "@/assets/Gallery/photo_2025-08-17 18.20.27.jpeg";
 import photo12 from "@/assets/Gallery/photo_2025-08-17 18.30.17.jpeg";
-import photo13 from "@/assets/Gallery/photo_2025-08-17 18.30.21.jpeg";
 import photo14 from "@/assets/Gallery/photo_2025-08-17 18.30.23.jpeg";
 import photo15 from "@/assets/Gallery/photo_2025-08-17 18.30.24.jpeg";
 import photo16 from "@/assets/Gallery/photo_2025-08-17 18.30.26.jpeg";
@@ -24,7 +23,6 @@ import photo17 from "@/assets/Gallery/photo_2025-08-17 18.30.27.jpeg";
 import photo18 from "@/assets/Gallery/photo_2025-08-17 18.30.30.jpeg";
 import photo19 from "@/assets/Gallery/photo_2025-08-17 18.30.45.jpeg";
 import photo20 from "@/assets/Gallery/photo_2025-08-17 18.30.51.jpeg";
-import photo21 from "@/assets/Gallery/photo_2025-08-17 18.30.57.jpeg";
 import photo22 from "@/assets/Gallery/photo_2025-08-17 18.31.11.jpeg";
 import photo23 from "@/assets/Gallery/photo_2025-08-17 18.31.19.jpeg";
 import photo24 from "@/assets/Gallery/photo_2025-08-17 18.41.14.jpeg";
@@ -60,14 +58,11 @@ import photo53 from "@/assets/Gallery/photo_2025-08-17 18.30.48.jpeg";
 import photo54 from "@/assets/Gallery/photo_2025-08-17 18.41.54.jpeg";
 import photo55 from "@/assets/Gallery/photo_2025-08-17 18.42.02.jpeg";
 import photo56 from "@/assets/Gallery/photo_2025-08-17 19.00.07.jpeg";
-import photo57 from "@/assets/Gallery/photo_2025-08-17 19.00.31.jpeg";
 import photo58 from "@/assets/Gallery/photo_2025-08-17 19.00.34.jpeg";
 import photo59 from "@/assets/Gallery/photo_2025-08-17 19.00.35.jpeg";
 import photo60 from "@/assets/Gallery/photo_2025-08-17 19.00.39.jpeg";
 import photo61 from "@/assets/Gallery/photo_2025-08-17 19.00.41.jpeg";
 import photo62 from "@/assets/Gallery/photo_2025-08-17 19.00.43.jpeg";
-import photo63 from "@/assets/Gallery/photo_2025-08-17 19.00.44.jpeg";
-import photo64 from "@/assets/Gallery/photo_2025-08-17 19.00.45.jpeg";
 import photo65 from "@/assets/Gallery/photo_2025-08-17 19.00.47.jpeg";
 
 const Gallery = () => {
@@ -130,11 +125,6 @@ const Gallery = () => {
       title: "Mindset Mastery Workshop"
     },
     {
-      src: photo13,
-      alt: "Dr. ADi Academy Training",
-      title: "Leadership Excellence Program"
-    },
-    {
       src: photo14,
       alt: "Dr. ADi Academy Event",
       title: "Transformational Speaking"
@@ -168,11 +158,6 @@ const Gallery = () => {
       src: photo20,
       alt: "Dr. ADi Academy Event",
       title: "Strategic Mindset Training"
-    },
-    {
-      src: photo21,
-      alt: "Dr. ADi Academy Session",
-      title: "Corporate Leadership Development"
     },
     {
       src: photo22,
@@ -350,11 +335,6 @@ const Gallery = () => {
       title: "Corporate Excellence Workshop"
     },
     {
-      src: photo57,
-      alt: "Dr. ADi Academy Training",
-      title: "Leadership Transformation Course"
-    },
-    {
       src: photo58,
       alt: "Dr. ADi Academy Session",
       title: "Executive Communication Mastery"
@@ -378,16 +358,6 @@ const Gallery = () => {
       src: photo62,
       alt: "Dr. ADi Academy Session",
       title: "Strategic Business Mastery"
-    },
-    {
-      src: photo63,
-      alt: "Dr. ADi Academy Event",
-      title: "Professional Excellence Program"
-    },
-    {
-      src: photo64,
-      alt: "Dr. ADi Academy Workshop",
-      title: "Transformational Leadership Intensive"
     },
     {
       src: photo65,
