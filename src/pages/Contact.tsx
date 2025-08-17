@@ -432,7 +432,7 @@ Comment: ${formData.comment}
                 Call {getDisplayPhone()}
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline">
+            <Button asChild size="lg" variant="secondary" className="bg-white hover:bg-white/90 text-primary">
               <a href="mailto:dradiacademy@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Email Us Now

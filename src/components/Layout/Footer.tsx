@@ -32,14 +32,22 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="relative h-24 w-24">
                 <img 
-                  src="/src/assets/DrAdiAcademy.png" 
+                  src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png"
                   alt="Dr. ADi Academy Logo" 
                   className="h-full w-full object-contain"
+                  loading="lazy"
                 />
               </div>
               <div>
                 <h3 className="text-xl font-bold gradient-text flex items-center gap-2">
-                  <GraduationCap className="h-6 w-6" />
+                  <div className="relative h-8 w-8">
+                    <img 
+                      src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png"
+                      alt="Dr. ADi Academy Icon" 
+                      className="h-full w-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
                   Dr. ADi Academy
                 </h3>
                 <p className="text-sm text-muted-foreground">Transform Your Life</p>
