@@ -164,6 +164,7 @@ const TrainingsSection = () => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>NEURO LINGUISTIC PROGRAMMING - NLP</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>POWER OF SUBCONSCIOUS MIND</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>MIND POWER UNLIMITED</strong></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>REWIRE YOUR MIND</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>WORLD CLASS MORNING RITUALS</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>HOOPONOPONO FOR HEALING</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>EMOTIONAL FREEDOM TECHNIQUE</strong></li>

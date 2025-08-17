@@ -25,7 +25,8 @@ import {
   ArrowRight,
   Home
 } from "lucide-react";
-import { SITE_CONFIG, getPhoneLink, getDisplayPhone, getYouTubeUrl } from "@/lib/config";
+import { FaTelegram } from "react-icons/fa";
+import { SITE_CONFIG, getPhoneLink, getDisplayPhone, getYouTubeUrl, getTelegramUrl } from "@/lib/config";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -290,6 +291,12 @@ Comment: ${formData.comment}
               </CardHeader>
               <CardContent>
                 <div className="flex space-x-4">
+                  <a href={getYouTubeUrl()} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <Youtube className="h-6 w-6" />
+                  </a>
+                  <a href={getTelegramUrl()} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                    <FaTelegram className="h-6 w-6" />
+                  </a>
                   <a href="https://www.facebook.com/dradiglobalacademy" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Facebook className="h-6 w-6" />
                   </a>
@@ -298,9 +305,6 @@ Comment: ${formData.comment}
                   </a>
                   <a href="https://www.instagram.com/dradiglobalacademy" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Instagram className="h-6 w-6" />
-                  </a>
-                  <a href={getYouTubeUrl()} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Youtube className="h-6 w-6" />
                   </a>
                   <a href="https://www.linkedin.com/in/adinarayana-reddy-kadapa-70a97015" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                     <Linkedin className="h-6 w-6" />

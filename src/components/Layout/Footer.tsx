@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Youtube, MessageCircle, Heart, Instagram, Linkedin, GraduationCap } from "lucide-react";
+import { Mail, Phone, MapPin, Youtube, Heart, Instagram, Linkedin, GraduationCap } from "lucide-react";
+import { FaTelegram } from "react-icons/fa";
 import { SITE_CONFIG, getPhoneLink, getDisplayPhone, getYouTubeUrl, getTelegramUrl } from "@/lib/config";
 
 const Footer = () => {
@@ -120,7 +121,7 @@ const Footer = () => {
                 aria-label="Join us on Telegram"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <MessageCircle className="h-5 w-5" />
+                <FaTelegram className="h-5 w-5" />
               </a>
               <a 
                 href={getYouTubeUrl()} 

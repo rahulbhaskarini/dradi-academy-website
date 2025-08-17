@@ -23,6 +23,7 @@ export const SITE_CONFIG = {
     // facebook: "",
     // instagram: "",
     youtube: "https://www.youtube.com/@dradiglobalacademy",
+    telegram: "https://t.me/+F37v8f6NXpJkYWJl",
     // linkedin: ""
   }
 } as const;
@@ -41,4 +42,4 @@ export const getDisplayPhone = () => {
 export const getYouTubeUrl = () => SITE_CONFIG.social.youtube;
 
 // Helper function to get Telegram URL
-export const getTelegramUrl = () => "https://t.me/DrAdiAcademy";
+export const getTelegramUrl = () => SITE_CONFIG.social.telegram;
