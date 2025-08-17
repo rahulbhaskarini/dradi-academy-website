@@ -12,7 +12,7 @@ const RewireYourMind = () => {
   return (
     <Layout>
       <SEO 
-        title="Rewire Your Mind | DR.ADI Academy"
+        title="Rewire Your Mind | Dr.Adi Academy"
         description="Rewire Your Mind, Recreate Your Life. Discover the science of breaking old patterns and creating a new reality based on Dr. Joe Dispenza's teachings in Miyapur, Hyderabad."
       />
       <div className="container mx-auto px-4 py-8">

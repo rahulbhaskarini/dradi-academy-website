@@ -27,7 +27,7 @@ const OtherTrainings = () => {
   return (
     <Layout>
       <SEO 
-        title="Other Training Programs | DR.ADI Academy"
+        title="Other Training Programs | Dr.Adi Academy"
         description="Explore our comprehensive range of specialized training programs including Emotional Intelligence, Personal Coaching, Super Student Workshop, Parenting, and Corporate Training in Miyapur, Hyderabad."
       />
       

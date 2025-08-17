@@ -55,7 +55,7 @@ const ContactSimple = () => {
 
     try {
       // Create mailto link with form data
-      const subject = encodeURIComponent("Contact Form Submission - DR.ADI Academy");
+      const subject = encodeURIComponent("Contact Form Submission - Dr.Adi Academy");
       const body = encodeURIComponent(`
 Name: ${formData.name}
 Phone Number: ${formData.phone}
@@ -63,7 +63,7 @@ Email: ${formData.email}
 Comment: ${formData.comment}
       `);
       
-      window.location.href = `mailto:info@dradiacademy.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:dradiacademy@gmail.com?subject=${subject}&body=${body}`;
       
       alert("Opening your email client...");
 
@@ -84,8 +84,8 @@ Comment: ${formData.comment}
   return (
     <Layout>
       <SEO 
-        title="Contact Us - DR.ADI Academy"
-        description="Get in touch with DR.ADI Academy for life coaching and personal development training. Contact us for program inquiries, consultations, and enrollment information."
+        title="Contact Us - Dr.Adi Academy"
+        description="Get in touch with Dr.Adi Academy for life coaching and personal development training. Contact us for program inquiries, consultations, and enrollment information."
       />
       
       <div className="min-h-screen bg-background">
@@ -226,7 +226,7 @@ Comment: ${formData.comment}
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">info@dradiacademy.com</p>
+                      <p className="text-muted-foreground">dradiacademy@gmail.com</p>
                       <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -259,7 +259,7 @@ Comment: ${formData.comment}
                   
                   <Button asChild className="w-full" variant="outline">
                     <a 
-                      href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}?text=Hi! I'm interested in DR.ADI Academy training programs.`}
+                      href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}?text=Hi! I'm interested in Dr.Adi Academy training programs.`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

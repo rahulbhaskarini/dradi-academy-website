@@ -147,7 +147,7 @@ const Trainings = () => {
   return (
     <Layout>
       <SEO 
-        title="Trainings We Offer | DR.ADI Academy" 
+        title="Trainings We Offer | Dr.Adi Academy" 
         description="Explore LOA, NLP, Subconscious Mind, Mind Power, Mind Mastery, 5 AM Club, Habit Mastery, Millionaire Mind, and more in Miyapur, Hyderabad. Transform your life with proven programs." 
       />
       {/* Hero Section */}

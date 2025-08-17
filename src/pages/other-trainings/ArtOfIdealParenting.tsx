@@ -12,7 +12,7 @@ const ArtOfIdealParenting = () => {
   return (
     <Layout>
       <SEO 
-        title="Art of Ideal Parenting | DR.ADI Academy"
+        title="Art of Ideal Parenting | Dr.Adi Academy"
         description="Master the art and science of modern parenting in Miyapur, Hyderabad. Learn evidence-based strategies to build confidence, improve communication, develop self-image, and provide unconditional love with Dr. ANR's proven methodologies."
       />
       <div className="container mx-auto px-4 py-8">

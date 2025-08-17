@@ -65,7 +65,7 @@ const Contact = () => {
 
     try {
       // Create mailto link with form data
-      const subject = encodeURIComponent("Contact Form Submission - DR.ADI Academy");
+      const subject = encodeURIComponent("Contact Form Submission - Dr.Adi Academy");
       const body = encodeURIComponent(`
 Name: ${formData.name}
 Phone Number: ${formData.phone}
@@ -73,7 +73,7 @@ Email: ${formData.email}
 Comment: ${formData.comment}
       `);
       
-      window.location.href = `mailto:info@dradiacademy.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:dradiacademy@gmail.com?subject=${subject}&body=${body}`;
       
       toast({
         title: "Opening Email Client",
@@ -101,8 +101,8 @@ Comment: ${formData.comment}
   return (
     <Layout>
       <SEO 
-        title="Contact Us | DR.ADI Academy"
-        description="Contact DR.ADI Academy in Miyapur, Hyderabad for transformational training programs. Get in touch for Law of Attraction, NLP, Mind Power, Personal Coaching, and other life-changing courses. Call +91 89785 44550 or email info@dradiacademy.com"
+        title="Contact Us | Dr.Adi Academy"
+        description="Contact Dr.Adi Academy in Miyapur, Hyderabad for transformational training programs. Get in touch for Law of Attraction, NLP, Mind Power, Personal Coaching, and other life-changing courses. Call +91 89785 44550 or email dradiacademy@gmail.com"
       />
       
       <div className="container mx-auto px-4 py-8">
@@ -249,10 +249,10 @@ Comment: ${formData.comment}
                   <div>
                     <p className="font-semibold">Email</p>
                     <a 
-                      href="mailto:info@dradiacademy.com" 
+                      href="mailto:dradiacademy@gmail.com" 
                       className="text-primary hover:text-primary/80 transition-colors"
                     >
-                      info@dradiacademy.com
+                      dradiacademy@gmail.com
                     </a>
                   </div>
                 </div>
@@ -321,7 +321,7 @@ Comment: ${formData.comment}
                     </a>
                   </Button>
                   <Button asChild variant="outline" className="w-full">
-                    <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}?text=Hi! I'm interested in DR.ADI Academy training programs.`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://wa.me/${SITE_CONFIG.phone.replace(/\D/g, '')}?text=Hi! I'm interested in Dr.Adi Academy training programs.`} target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="mr-2 h-4 w-4" />
                       WhatsApp
                     </a>
@@ -332,30 +332,11 @@ Comment: ${formData.comment}
           </div>
         </div>
 
-        {/* Location Map Placeholder */}
-        <Card className="mb-12">
-          <CardHeader>
-            <CardTitle>Our Location</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-muted rounded-lg p-8 text-center">
-              <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Visit Our Training Center</h3>
-              <p className="text-muted-foreground mb-4">
-                Located in the heart of Miyapur, Hyderabad, our training center provides a comfortable and inspiring environment for your transformational journey.
-              </p>
-              <p className="text-sm text-muted-foreground">
-                <strong>Address:</strong> Mathru Sri Nagar, Miyapur, Hyderabad, Telangana - 500049
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-
         {/* Why Contact Us */}
         <section className="mb-12">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Why Contact DR.ADI Academy?
+              Why Contact Dr.Adi Academy?
             </h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
               Take the first step towards your transformation. Here's what you can expect when you reach out to us.
@@ -448,7 +429,7 @@ Comment: ${formData.comment}
               </a>
             </Button>
             <Button asChild size="lg" variant="outline">
-              <a href="mailto:info@dradiacademy.com">
+              <a href="mailto:dradiacademy@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Email Us Now
               </a>

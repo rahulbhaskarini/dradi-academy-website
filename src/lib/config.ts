@@ -2,7 +2,7 @@
 export const SITE_CONFIG = {
   // Contact Information
   phone: "+916385733491",
-  email: "contact@dradiacademy.com", // You can add email here when needed
+  email: "dradiacademy@gmail.com", // You can add email here when needed
   
   // Location
   location: {
@@ -13,7 +13,7 @@ export const SITE_CONFIG = {
   
   // Business Information
   business: {
-    name: "DR.ADI Academy",
+    name: "Dr. ADi Academy",
     tagline: "Transform Your Life Through Mind Power",
     description: "Leading training institute for personal development, mind mastery, and life transformation"
   },
@@ -39,3 +39,6 @@ export const getDisplayPhone = () => {
 
 // Helper function to get YouTube URL
 export const getYouTubeUrl = () => SITE_CONFIG.social.youtube;
+
+// Helper function to get Telegram URL
+export const getTelegramUrl = () => "https://t.me/DrAdiAcademy";

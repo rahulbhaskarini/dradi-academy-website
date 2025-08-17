@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import MyStory from "./pages/MyStory";
@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Trainings from "./pages/Trainings";
 import OtherTrainings from "./pages/OtherTrainings";
 import NotFound from "./pages/NotFound";
+import Gallery from "./pages/Gallery";
 
 // Training Pages
 import LawOfAttraction from "./pages/trainings/LawOfAttraction";
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/trainings" element={<Trainings />} />
           <Route path="/other-trainings" element={<OtherTrainings />} />
+          <Route path="/gallery" element={<Gallery />} />
           
           {/* Training Routes */}
           <Route path="/trainings/law-of-attraction" element={<LawOfAttraction />} />
@@ -57,6 +59,8 @@ const App = () => (
           <Route path="/trainings/habit-mastery" element={<HabitMastery />} />
           <Route path="/trainings/millionaire-mind" element={<MillionaireMind />} />
           <Route path="/trainings/rewire-your-mind" element={<RewireYourMind />} />
+          {/* Redirect /trainings/emotional-intelligence to other-trainings */}
+          <Route path="/trainings/emotional-intelligence" element={<Navigate to="/other-trainings/emotional-intelligence" replace />} />
           
           {/* Other Training Routes */}
           <Route path="/other-trainings/emotional-intelligence" element={<EmotionalIntelligence />} />
@@ -66,6 +70,13 @@ const App = () => (
           <Route path="/other-trainings/art-of-ideal-parenting" element={<ArtOfIdealParenting />} />
           <Route path="/other-trainings/school-community-programs" element={<SchoolCommunityPrograms />} />
           <Route path="/other-trainings/corporate-training" element={<CorporateTraining />} />
+          
+          {/* Redirects for sitemap.html backward compatibility */}
+          <Route path="/other-trainings/love-heal-yourself" element={<Navigate to="/other-trainings/love-yourself-heal-yourself" replace />} />
+          <Route path="/other-trainings/super-student" element={<Navigate to="/other-trainings/super-student-workshop" replace />} />
+          <Route path="/other-trainings/parenting" element={<Navigate to="/other-trainings/art-of-ideal-parenting" replace />} />
+          <Route path="/other-trainings/schools-communities" element={<Navigate to="/other-trainings/school-community-programs" replace />} />
+          <Route path="/other-trainings/corporate" element={<Navigate to="/other-trainings/corporate-training" replace />} />
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

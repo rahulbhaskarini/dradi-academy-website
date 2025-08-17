@@ -12,7 +12,7 @@ const MindMastery = () => {
   return (
     <Layout>
       <SEO 
-        title="Mind Mastery Coaching | DR.ADI Academy"
+        title="Mind Mastery Coaching | Dr. ADi Academy"
         description="Master your mind and unlock your unlimited potential. Mind Mastery coaching in Miyapur, Hyderabad for connecting with universal power, raising vibration, and achieving your life goals."
       />
       <div className="container mx-auto px-4 py-8">

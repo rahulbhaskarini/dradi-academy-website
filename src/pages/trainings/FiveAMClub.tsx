@@ -12,7 +12,7 @@ const FiveAMClub = () => {
   return (
     <Layout>
       <SEO 
-        title="World Class Morning Rituals - 5 AM Club | DR.ADI Academy"
+        title="World Class Morning Rituals - 5 AM Club | Dr.Adi Academy"
         description={`Win your day before it begins. Learn the world-class 5 AM morning rituals in ${SITE_CONFIG.location.full} to build discipline, focus, and daily momentum.`}
       />
       <div className="container mx-auto px-4 py-8">

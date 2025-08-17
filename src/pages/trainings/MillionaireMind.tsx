@@ -12,7 +12,7 @@ const MillionaireMind = () => {
   return (
     <Layout>
       <SEO 
-        title="Millionaire Mind Unlimited | DR.ADI Academy"
+        title="Millionaire Mind Unlimited | Dr. ADi Academy"
         description="Create a millionaire mindset and transform your wealth consciousness. Remove subconscious blocks stopping you from attracting prosperity. Millionaire mindset coaching in Miyapur, Hyderabad with Dr. ANR."
       />
       <div className="container mx-auto px-4 py-8">

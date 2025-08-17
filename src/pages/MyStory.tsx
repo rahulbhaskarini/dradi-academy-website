@@ -2,7 +2,8 @@ import Layout from "@/components/Layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-// Using the new uploaded image of Dr. ANR
+import { Link } from "react-router-dom";
+import drAdiImage from "@/assets/DrAdiAcademy3.jpeg";
 import { 
   GraduationCap, 
   Briefcase, 
@@ -63,8 +64,8 @@ const MyStory = () => {
               <div className="relative">
                 <div className="relative z-10">
                   <img 
-                    src="/lovable-uploads/1d9c5bc1-476c-4aab-9e29-2fb39b34385d.png"
-                    alt="Dr. ANR - Founder of DR.ADI Academy"
+                    src={drAdiImage}
+                    alt="Dr. ANR - Founder of Dr.Adi Academy"
                     className="w-full max-w-md mx-auto rounded-2xl shadow-elegant"
                   />
                 </div>
@@ -183,9 +184,11 @@ const MyStory = () => {
                   <Button variant="hero" size="xl">
                     Start Your Transformation
                   </Button>
-                  <Button variant="outline" size="xl">
-                    Contact Dr. ANR
-                  </Button>
+                  <Link to="/contact">
+                    <Button variant="outline" size="xl">
+                      Contact us for Registrations
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </CardContent>

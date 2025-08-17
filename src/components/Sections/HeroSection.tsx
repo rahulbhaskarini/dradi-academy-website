@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Play, Youtube } from "lucide-react";
+import { ArrowRight, Star, Youtube } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import drAdiLogo from "@/assets/DrAdiAcademy.png";
 import { getYouTubeUrl } from "@/lib/config";
 
 const HeroSection = () => {
@@ -18,8 +19,9 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl">
-          <div className="animate-fade-in">
+        <div className="relative">
+          {/* Main content */}
+          <div className="animate-fade-in max-w-4xl">
             {/* Badge */}
             <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
               <Star className="h-4 w-4" />
@@ -80,6 +82,18 @@ const HeroSection = () => {
               <div>
                 <span className="font-semibold">Dr. ANR</span> - Ph.D, Certified Trainer
               </div>
+            </div>
+          </div>
+
+          {/* Right side floating image */}
+          <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-0 w-[45%]">
+            <div className="relative w-full flex justify-end">
+              <img 
+                src={drAdiLogo} 
+                alt="Dr. ADi Academy Logo"
+                className="object-contain drop-shadow-xl animate-fade-in rounded-3xl"
+                style={{ width: '90%', objectPosition: 'right center' }}
+              />
             </div>
           </div>
         </div>

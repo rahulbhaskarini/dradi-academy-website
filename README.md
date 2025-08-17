@@ -146,7 +146,7 @@ The project includes deployment configuration for all major platforms:
 ## 📞 Contact Information
 
 - **Phone:** +91 6385733491
-- **Email:** info@dradiacademy.com
+- **Email:** dradiacademy@gmail.com
 - **Location:** Miyapur, Hyderabad, Telangana
 - **Website:** [dradiacademy.com](https://dradiacademy.com)
 

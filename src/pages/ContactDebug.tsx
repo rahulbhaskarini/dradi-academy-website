@@ -5,8 +5,8 @@ const ContactDebug = () => {
   return (
     <Layout>
       <SEO 
-        title="Contact Us - DR.ADI Academy"
-        description="Get in touch with DR.ADI Academy for life coaching and personal development training. Contact us for program inquiries, consultations, and enrollment information."
+        title="Contact Us - Dr.Adi Academy"
+        description="Get in touch with Dr.Adi Academy for life coaching and personal development training. Contact us for program inquiries, consultations, and enrollment information."
       />
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-16">

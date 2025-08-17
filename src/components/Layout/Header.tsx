@@ -55,7 +55,8 @@ const Header = () => {
         { name: "Corporate Training", href: "/other-trainings/corporate-training" }
       ]
     },
-    { name: "Contact Us", href: "/contact" }
+    { name: "Contact Us", href: "/contact" },
+    { name: "Gallery", href: "/gallery" }
   ];
 
   return (
@@ -69,7 +70,7 @@ const Header = () => {
               <div className="relative h-28 w-28 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png" 
-                  alt="DR.ADI Academy Logo" 
+                  alt="Dr. ADi Academy Logo" 
                   className="h-full w-full object-contain"
                   loading="eager"
                 />
@@ -78,7 +79,7 @@ const Header = () => {
               {/* Academy Name */}
               <div className="flex flex-col">
                 <span className="text-lg md:text-xl font-bold gradient-text leading-tight">
-                  DR.ADI ACADEMY
+                  Dr. ADi Academy
                 </span>
               </div>
             </Link>

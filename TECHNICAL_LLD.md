@@ -242,7 +242,7 @@ User Interaction
 export const SITE_CONFIG = {
   name: "DR.ADI Academy",
   phone: "+91 6385733491",
-  email: "info@dradiacademy.com",
+  email: "dradiacademy@gmail.com",
   address: "Miyapur, Hyderabad, Telangana",
   social: {
     facebook: "https://www.facebook.com/dradiglobalacademy",
@@ -542,7 +542,7 @@ const organizationSchema = {
   "description": "Life Coaching and Personal Development Training Institute",
   "url": "https://dradiacademy.com",
   "telephone": "+91-6385733491",
-  "email": "info@dradiacademy.com",
+  "email": "dradiacademy@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Miyapur",

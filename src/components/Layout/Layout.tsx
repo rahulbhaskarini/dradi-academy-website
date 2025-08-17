@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Chatbot from "@/components/Chatbot";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -17,7 +16,6 @@ const Layout = ({ children, showScrollToTop = true }: LayoutProps) => {
       </main>
       <Footer />
       {showScrollToTop && <ScrollToTopButton />}
-      <Chatbot />
     </div>
   );
 };

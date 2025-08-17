@@ -12,7 +12,7 @@ const CorporateTraining = () => {
   return (
     <Layout>
       <SEO 
-        title="Corporate Training Programs | DR.ADI Academy"
+        title="Corporate Training Programs | Dr.Adi Academy"
         description="Customized corporate training programs in Miyapur, Hyderabad. We offer professional development training sessions as per corporate needs for leadership, team building, performance enhancement, and employee transformation with Dr. ANR's methodologies."
       />
       <div className="container mx-auto px-4 py-8">

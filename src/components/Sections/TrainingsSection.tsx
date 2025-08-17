@@ -271,10 +271,10 @@ const TrainingsSection = () => {
                         alt={training.title}
                         className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      {training.title === "Mind Mastery" && (
+                      {(training.title === "Mind Mastery" || training.title === "Rewire Your Mind") && (
                         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                           <h3 className="text-white text-xl md:text-2xl font-bold text-center px-4">
-                            Mind Mastery coaching
+                            {training.title}
                           </h3>
                         </div>
                       )}

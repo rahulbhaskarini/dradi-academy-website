@@ -37,7 +37,7 @@
 - ✅ **Modern Design**: Gradient backgrounds, smooth animations
 - ✅ **Responsive Layout**: Perfect display on mobile and desktop
 - ✅ **Interactive Elements**: Hover effects, button animations
-- ✅ **Professional Branding**: DR.ADI Academy color scheme and styling
+- ✅ **Professional Branding**: Dr.Adi Academy color scheme and styling
 
 ### 📈 **Business Intelligence**
 - ✅ **Program Interest Tracking**: Monitor which training programs users discuss
