@@ -241,7 +241,7 @@ User Interaction
 // lib/config.ts
 export const SITE_CONFIG = {
   name: "DR.ADI Academy",
-  phone: "+91 8978544550",
+  phone: "+91 6385733491",
   email: "info@dradiacademy.com",
   address: "Miyapur, Hyderabad, Telangana",
   social: {
@@ -281,6 +281,7 @@ const routes = [
   { path: "/trainings/5am-club", component: FiveAMClub },
   { path: "/trainings/habit-mastery", component: HabitMastery },
   { path: "/trainings/millionaire-mind", component: MillionaireMind },
+  { path: "/trainings/rewire-your-mind", component: RewireYourMind },
   
   // Other Training Routes
   { path: "/other-trainings/emotional-intelligence", component: EmotionalIntelligence },
@@ -540,7 +541,7 @@ const organizationSchema = {
   "name": "DR.ADI Academy",
   "description": "Life Coaching and Personal Development Training Institute",
   "url": "https://dradiacademy.com",
-  "telephone": "+91-8978544550",
+  "telephone": "+91-6385733491",
   "email": "info@dradiacademy.com",
   "address": {
     "@type": "PostalAddress",

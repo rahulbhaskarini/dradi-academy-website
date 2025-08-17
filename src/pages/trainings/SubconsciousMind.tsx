@@ -2,7 +2,7 @@ import Layout from "@/components/Layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, Brain, Lightbulb, Target, Infinity } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import scmImage from "@/assets/trainings/scm-main.png";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
@@ -59,107 +59,13 @@ const SubconsciousMind = () => {
               <Link to="/contact?training=Power%20of%20Subconscious%20Mind%20-%20SCM">
                 <Button variant="cta" size="lg" asChild>
                   <span>
-                    <Mail className="h-4 w-4 mr-2" />
-                    MAIL US TO REGISTER
+                    <Phone className="h-4 w-4 mr-2" />
+                    CONTACT US FOR REGISTRATIONS
                   </span>
                 </Button>
               </Link>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Conscious vs Subconscious Mind */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-8">Conscious vs. Subconscious Mind</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Brain className="h-5 w-5 text-primary" />
-                  Conscious Mind
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Lightbulb className="h-4 w-4 text-muted-foreground" />
-                    Logical thinking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-muted-foreground" />
-                    Goal setter
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Brain className="h-4 w-4 text-muted-foreground" />
-                    Limited power
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-muted-foreground" />
-                    Analytical approach
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Infinity className="h-5 w-5 text-primary" />
-                  Subconscious Mind
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Lightbulb className="h-4 w-4 text-muted-foreground" />
-                    Creative thinking
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-muted-foreground" />
-                    Goal getter
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Infinity className="h-4 w-4 text-muted-foreground" />
-                    Unlimited power
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-muted-foreground" />
-                    Co-creation process
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
-        {/* Training Curriculum */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-8">What You'll Learn</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Access Techniques</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Learn step by step procedures to get access to the power of your subconscious mind and make goal achievement simple.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Programming Methods</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Master the art of programming your subconscious mind with positive beliefs and empowering thoughts.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Co-Creation Process</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Understand that nothing is co-incidence as you feel, but it is co-creation through subconscious programming.</p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
 
         {/* Keywords & Tags */}

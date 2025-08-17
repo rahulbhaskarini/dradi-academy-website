@@ -20,6 +20,7 @@ import MindMastery from "./pages/trainings/MindMastery";
 import FiveAMClub from "./pages/trainings/FiveAMClub";
 import HabitMastery from "./pages/trainings/HabitMastery";
 import MillionaireMind from "./pages/trainings/MillionaireMind";
+import RewireYourMind from "./pages/trainings/RewireYourMind";
 
 // Other Training Pages
 import EmotionalIntelligence from "./pages/other-trainings/EmotionalIntelligence";
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/trainings/5am-club" element={<FiveAMClub />} />
           <Route path="/trainings/habit-mastery" element={<HabitMastery />} />
           <Route path="/trainings/millionaire-mind" element={<MillionaireMind />} />
+          <Route path="/trainings/rewire-your-mind" element={<RewireYourMind />} />
           
           {/* Other Training Routes */}
           <Route path="/other-trainings/emotional-intelligence" element={<EmotionalIntelligence />} />

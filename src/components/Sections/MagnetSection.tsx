@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Brain, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+// Import Joe Dispenza image (you'll need to add this image to the assets folder)
+import joeDispenzaImage from "@/assets/trainings/joe-dispenza-rewire.jpg";
 
 const MagnetSection = () => {
   return (
@@ -12,50 +15,46 @@ const MagnetSection = () => {
               {/* Content */}
               <div className="p-8 md:p-12">
                 <div className="flex items-center space-x-2 mb-6">
-                  <Sparkles className="h-6 w-6 text-primary animate-pulse" />
-                  <span className="text-primary font-semibold">You Are Magical</span>
+                  <Brain className="h-6 w-6 text-primary animate-pulse" />
+                  <span className="text-primary font-semibold">Rewire Your Mind</span>
                 </div>
                 
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                  <span className="gradient-text">You are the walking and talking magnet.</span>
+                  <span className="gradient-text">Break free from old patterns and create your new reality.</span>
                 </h2>
                 
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  You can create whatever you manifest by following simple and easy to follow tools and techniques. 
-                  You have all the resources needed to reach your goal but you feel you are lacking them because 
-                  your inner voice is resisting you.
+                  Your mind is incredibly powerful, but most of us are running the same mental programs day after day, creating the same experiences over and over. To change your life, you must first rewire your mind.
                 </p>
                 
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  We know the secrets to unfold and make you practice to unfold for you as well. Join with us 
-                  and experience the magic.
+                  Based on Dr. Joe Dispenza's revolutionary teachings, learn to become conscious of your unconscious patterns and create new neural pathways that support the life you truly want to live.
                 </p>
                 
-                <Button variant="hero" size="xl" className="group">
-                  Experience The Magic
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link to="/trainings/rewire-your-mind">
+                  <Button variant="hero" size="xl" className="group">
+                    Discover Neural Rewiring
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </div>
 
-              {/* Image/Video Placeholder */}
-              <div className="relative h-64 lg:h-full min-h-[400px] bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                {/* Animated Elements */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10"></div>
-                
-                {/* Floating Elements */}
-                <div className="relative z-10 text-center">
-                  <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-r from-primary to-primary-glow rounded-full flex items-center justify-center animate-float">
-                    <Sparkles className="h-12 w-12 text-primary-foreground" />
+              {/* Joe Dispenza Image */}
+              <div className="relative h-64 lg:h-full min-h-[400px] overflow-hidden">
+                <img 
+                  src={joeDispenzaImage} 
+                  alt="Dr. Joe Dispenza - Rewire Your Mind expert and neuroscientist teaching neural rewiring and consciousness transformation"
+                  className="w-full h-full object-cover object-center"
+                  loading="lazy"
+                  decoding="async"
+                />
+                {/* Optional overlay with text */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent flex items-end justify-center pb-8">
+                  <div className="text-center text-white">
+                    <p className="text-sm font-medium opacity-90">Dr. Joe Dispenza</p>
+                    <p className="text-xs opacity-75">Neuroscientist & Author</p>
                   </div>
-                  <h3 className="text-2xl font-bold gradient-text mb-2">Unlock Your Potential</h3>
-                  <p className="text-muted-foreground">Discover the magician within you</p>
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <div className="absolute top-3/4 right-1/4 w-3 h-3 bg-accent rounded-full animate-pulse delay-300"></div>
-                <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-energy rounded-full animate-pulse delay-700"></div>
-                <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-success rounded-full animate-pulse delay-500"></div>
               </div>
             </div>
           </CardContent>

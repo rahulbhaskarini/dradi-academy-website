@@ -36,6 +36,7 @@ const Header = () => {
         { name: "Power of Subconscious Mind - SCM", href: "/trainings/subconscious-mind" },
         { name: "Mind Power Unlimited - MPU", href: "/trainings/mind-power" },
         { name: "Mind Mastery", href: "/trainings/mind-mastery" },
+        { name: "Rewire Your Mind", href: "/trainings/rewire-your-mind" },
         { name: "5 AM Club", href: "/trainings/5am-club" },
         { name: "Habit Mastery", href: "/trainings/habit-mastery" },
         { name: "Millionaire Mind Unlimited", href: "/trainings/millionaire-mind" }

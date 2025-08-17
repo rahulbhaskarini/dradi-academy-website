@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone } from "lucide-react";
-import mindPowerImage from "@/assets/trainings/mind-power-unlimited-original.jpg";
+import mindPowerImage from "@/assets/trainings/mind-power-main.jpg";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { SITE_CONFIG, getPhoneLink, getDisplayPhone } from "@/lib/config";
 
-const MindPower = () => {
+const RewireYourMind = () => {
   return (
     <Layout>
       <SEO 
-        title="Mind Power Unlimited - MPU | DR.ADI Academy"
-        description="Unlock the unlimited potential of your mind. Mind Power Unlimited training in Miyapur, Hyderabad to raise vibration, connect with universal power, and achieve goals."
+        title="Rewire Your Mind | DR.ADI Academy"
+        description="Rewire Your Mind, Recreate Your Life. Discover the science of breaking old patterns and creating a new reality based on Dr. Joe Dispenza's teachings in Miyapur, Hyderabad."
       />
       <div className="container mx-auto px-4 py-8">
         {/* Breadcrumbs */}
@@ -22,12 +22,12 @@ const MindPower = () => {
           <span className="mx-2 text-muted-foreground">/</span>
           <Link to="/trainings" className="text-muted-foreground hover:text-primary">Trainings We Offer</Link>
           <span className="mx-2 text-muted-foreground">/</span>
-          <span className="text-foreground">Mind Power Unlimited - MPU</span>
+          <span className="text-foreground">Rewire Your Mind</span>
         </nav>
 
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-foreground mb-4">Mind Power Unlimited - MPU</h1>
-          <p className="text-xl text-muted-foreground mb-6">Coaching in Miyapur, Hyderabad</p>
+          <h1 className="text-4xl font-bold text-foreground mb-4">Rewire Your Mind, Recreate Your Life</h1>
+          <p className="text-xl text-muted-foreground mb-6">Coaching in {SITE_CONFIG.location.full}</p>
           <div className="flex items-center justify-center gap-2 mb-8">
             <a 
               href={getPhoneLink()}
@@ -41,22 +41,19 @@ const MindPower = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <img src={mindPowerImage} alt="Mind Power Unlimited Training" className="w-full h-64 object-cover rounded-lg" loading="lazy" decoding="async" />
+          <img src={mindPowerImage} alt="Rewire Your Mind" className="w-full h-64 object-cover rounded-lg" loading="lazy" decoding="async" />
           <Card>
             <CardHeader>
-              <CardTitle>Unleash Your Unlimited Potential</CardTitle>
+              <CardTitle>Break Free from Your Past</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                You have unlimited power as universal nature is abundance. But in case you are unable to experience the abundance in your life, then it is just because of your limiting beliefs and negative inner voice, also because, you are not able to connect with the universal power house.
+                Most people live by old habits and emotions, unconsciously repeating their past every day. This training is based on the powerful teachings of Dr. Joe Dispenza. You'll learn how to break free from your limiting thoughts, rewire your brain through meditation and visualization, and start living the life you truly desire.
               </p>
               <p className="mb-4">
-                Everything in nature is vibration and energy, if you vibrate at higher frequency then you can able to see your self with higher self esteem, resourcefulness, taking inspiring actions through your unlimited subconscious mind power.
+                Transform your neural pathways, elevate your emotions, and create a new reality that aligns with your highest potential. It's time to stop being a victim of your unconscious mind and become the conscious creator of your life.
               </p>
-              <p className="mb-4">
-                Your subconscious mind has the ability to connect you with the universal powerhouse, if you operate with purpose in life with clear intent and clarity. Practice the goal achievement processes to face the obstacles and challenges you come across, by doing all this, you will become a compulsive goal achiever.
-              </p>
-              <Link to="/contact?training=Mind%20Power%20Unlimited%20-%20MPU">
+              <Link to="/contact?training=Rewire%20Your%20Mind">
                 <Button variant="cta" size="lg" asChild>
                   <span>
                     <Phone className="h-4 w-4 mr-2" />
@@ -73,14 +70,14 @@ const MindPower = () => {
           <h3 className="text-xl font-semibold mb-4">Course Keywords</h3>
           <div className="flex flex-wrap gap-2">
             {[
-              "Mind Power Unlimited",
-              "Subconscious Mind",
-              "Universal Connection",
-              "Higher Vibration",
-              "Goal Achievement",
-              "Mental Power",
-              "Life Transformation",
-              "Unlimited Potential"
+              "Rewire Your Mind",
+              "Dr. Joe Dispenza",
+              "Neural Pathways",
+              "Meditation",
+              "Visualization",
+              "Breaking Habits",
+              "Unconscious Patterns",
+              "Mind-Body Connection"
             ].map((keyword, index) => (
               <Badge key={index} variant="secondary">{keyword}</Badge>
             ))}
@@ -89,10 +86,10 @@ const MindPower = () => {
 
         {/* Call to Action */}
         <div className="text-center bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg">
-          <h3 className="text-2xl font-bold mb-4">Ready to Unlock Your Unlimited Mind Power?</h3>
-          <p className="text-lg mb-6">Join our Mind Power Unlimited training and start accessing your infinite potential today!</p>
+          <h3 className="text-2xl font-bold mb-4">Ready to Rewire Your Mind?</h3>
+          <p className="text-lg mb-6">Stop living by your past emotions and start creating your future!</p>
           <div className="space-x-4">
-            <Link to="/contact?training=Mind%20Power%20Unlimited%20-%20MPU">
+            <Link to="/contact?training=Rewire%20Your%20Mind">
               <Button variant="cta" size="lg" asChild>
                 <span>
                   <Mail className="h-4 w-4 mr-2" />
@@ -113,4 +110,4 @@ const MindPower = () => {
   );
 };
 
-export default MindPower;
+export default RewireYourMind;

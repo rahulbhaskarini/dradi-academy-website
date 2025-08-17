@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Star, Play } from "lucide-react";
+import { ArrowRight, Star, Play, Youtube } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 import { getYouTubeUrl } from "@/lib/config";
 
@@ -44,8 +44,7 @@ const HeroSection = () => {
 
             {/* Subheading */}
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              Welcome you to the new world. Forget the past and build the new you through Dr.ADI Academy. 
-              You are a magician and you can achieve what you thought-out. Understand the secrets to have a successful life.
+              Welcome to a new world of possibilities with Dr. ADI Academy. Leave the past behind and step into the journey of creating the best version of yourself. You are the magician of your life — capable of achieving everything you envision. Discover the secrets to success, happiness, and lasting transformation.
             </p>
 
             {/* CTA Buttons */}
@@ -56,8 +55,8 @@ const HeroSection = () => {
               </Button>
               <Button variant="outline" size="xl" asChild>
                 <a href={getYouTubeUrl()} target="_blank" rel="noopener noreferrer" className="group">
-                  <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                  Watch Our Story
+                  <Youtube className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                  Watch our YouTube channel
                 </a>
               </Button>
             </div>

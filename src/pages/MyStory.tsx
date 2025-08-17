@@ -16,7 +16,7 @@ import {
 
 const MyStory = () => {
   const qualifications = [
-    "Ph.D in Pharmacy",
+    "Ph.D in Pharmaceutics",
     "Psychologist", 
     "Certified trainer - Impact foundation",
     "Certified trainer - Blair Singer training academy",
@@ -32,8 +32,8 @@ const MyStory = () => {
   const achievements = [
     {
       icon: Briefcase,
-      title: "17+ Years R&D Experience",
-      description: "Working with reputed Indian Pharma Companies like Alkem, Torrent, Suven, Shilpa Therapeutics & Dr.Reddy's"
+      title: "20+ Years R&D Experience",
+      description: "Working with reputed Indian Pharma Companies like Alkem, Torrent, Suven, Shilpa Therapeutics & Dr. Reddy's"
     },
     {
       icon: Award,
@@ -48,7 +48,7 @@ const MyStory = () => {
     {
       icon: Target,
       title: "One Million Goal",
-      description: "My Life purpose is to teach, inspire, empower one million to live happier, healthier & successful"
+      description: "To teach, inspire, and empower one million people to live happier, healthier, and more successful lives"
     }
   ];
 
@@ -85,27 +85,29 @@ const MyStory = () => {
                 
                 <div className="space-y-4 text-lg text-muted-foreground mb-8">
                   <p>
-                    Dr.ANR has Ph.D in Pharmaceutic and working in research and development area from past 17+ years 
-                    with reputed India Pharma Companies like Alkem, Torrent, Suven, Shilpa Therapeutics & Dr.Reddy's. 
-                    Fortunate to be part of Covid-19 emergency medication projects through Emergency Use Authorizations 
-                    to address the public health emergency in pandemic time.
+                    Dr. Adi holds a Ph.D. in Pharmaceutics and brings over 20 years of rich experience in Research and Development 
+                    with reputed Indian pharmaceutical companies such as Alkem, Torrent, Suven, Shilpa Therapeutics, and Dr. Reddy's. 
+                    He was privileged to contribute to Covid-19 emergency medication projects approved under Emergency Use Authorizations, 
+                    addressing critical public health needs during the pandemic.
                   </p>
                   
                   <p>
-                    My passion forced me to focus on empowering people from their limited belief then started learning 
-                    from world best trainers and coaches and applying the magical learnings of Mind power tools and techniques, 
-                    thus helping people to become unstoppable.
+                    Guided by his passion to help people break free from limiting beliefs, Dr. Adi trained under some of the world's 
+                    best coaches and mentors. By applying powerful mind mastery tools and techniques, he has been empowering individuals 
+                    to unlock their full potential and live with purpose.
                   </p>
                 </div>
 
                 <blockquote className="text-xl md:text-2xl font-semibold text-primary border-l-4 border-primary pl-6 mb-8 italic">
-                  "My Life purpose is to teach, inspire, empower one million- to live happier, healthier & successful."
+                  His life's mission is clear: "To teach, inspire, and empower one million people to live happier, healthier, and more successful lives"
                 </blockquote>
 
-                <Button variant="cta" size="xl" className="group">
-                  Join My Mission
-                  <Sparkles className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
-                </Button>
+                <Link to="/contact">
+                  <Button variant="cta" size="xl" className="group">
+                    To Join my mission, Contact us
+                    <Sparkles className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

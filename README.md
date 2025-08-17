@@ -25,7 +25,7 @@ A modern, responsive website for DR.ADI Academy - a leading life coaching and pe
 - **Personal Coaching** - One-on-one transformation sessions
 
 ### **Contact & Social Integration**
-- 📞 **Direct Phone Integration** - `tel:+918978544550`
+- 📞 **Direct Phone Integration** - `tel:+916385733491`
 - 📧 **Email Contact Forms** - Professional inquiry system
 - 🌐 **Social Media Links** - Facebook, Instagram, YouTube, LinkedIn
 - 📍 **Location Details** - Miyapur, Hyderabad center information
@@ -145,7 +145,7 @@ The project includes deployment configuration for all major platforms:
 
 ## 📞 Contact Information
 
-- **Phone:** +91 8978544550
+- **Phone:** +91 6385733491
 - **Email:** info@dradiacademy.com
 - **Location:** Miyapur, Hyderabad, Telangana
 - **Website:** [dradiacademy.com](https://dradiacademy.com)

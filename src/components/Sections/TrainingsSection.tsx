@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { 
   Brain, 
   Heart, 
-  Target, 
   Sunrise, 
   Zap, 
   TrendingUp, 
@@ -18,6 +17,12 @@ import {
 // Import training images
 import mindPowerImage from "@/assets/trainings/mind-power-unlimited.jpg";
 import nlpImage from "@/assets/trainings/nlp-003.jpeg";
+import scmImage from "@/assets/trainings/scm-main.png";
+import mindMasteryImage from "@/assets/trainings/mind-mastery-original.jpg";
+import fiveAmClubImage from "@/assets/trainings/5am-club-main.jpg";
+import habitMasteryImage from "@/assets/trainings/habit-mastery.jpg";
+import millionaireMindImage from "@/assets/trainings/millionaire-mind-unlimited.jpg";
+import emotionalIntelligenceImage from "@/assets/trainings/emotional-intelligence.jpg";
 import loaHeroImage from "@/assets/trainings/loa-5.jpg";
 import loaImage1 from "@/assets/trainings/loa-2.jpg";
 import loaImage2 from "@/assets/trainings/law-of-attraction-blog.jpg";
@@ -27,73 +32,64 @@ import nlpDiagramImage from "@/assets/trainings/nlp-4.png";
 const TrainingsSection = () => {
   const primaryTrainings = [
     {
-      icon: Target,
-      title: "Law of Attraction - LOA",
-      description: "Learn to manifest your desires and create the life you want through proven LOA techniques and practices.",
-      href: "/trainings/law-of-attraction",
-      featured: true,
-      tag: "Most Popular"
-    },
-    {
-      icon: Brain,
-      title: "Neuro Linguistic Programming - NLP",
-      description: "Ultimate scientific method to get peak performance in Health, Wealth, Happiness, Business, and Relationships.",
-      href: "/trainings/nlp",
-      featured: true,
-      tag: "Highly Effective"
-    },
-    {
       icon: Zap,
       title: "Power of Subconscious Mind - SCM",
-      description: "Access unlimited power of your subconscious mind to achieve 100% results in all areas of life.",
+      image: scmImage,
       href: "/trainings/subconscious-mind",
-      featured: true,
-      tag: "Life Changing"
+      featured: true
     },
     {
       icon: Brain,
       title: "Mind Power Unlimited - MPU",
-      description: "Unlock the unlimited potential of your mind and create extraordinary results in your life.",
+      image: mindPowerImage,
       href: "/trainings/mind-power",
       featured: false
     },
     {
       icon: Heart,
       title: "Mind Mastery",
-      description: "Master your mind and thoughts to create the reality you desire with advanced techniques.",
+      image: mindMasteryImage,
       href: "/trainings/mind-mastery",
+      featured: false
+    },
+    {
+      icon: Brain,
+      title: "Rewire Your Mind",
+      image: mindMasteryImage, // Reusing the same image since it's conceptually related
+      href: "/trainings/rewire-your-mind",
       featured: false
     },
     {
       icon: Sunrise,
       title: "World Class Morning Rituals - 5 AM Club",
-      description: "Transform your life with powerful morning routines and world-class morning rituals.",
+      image: fiveAmClubImage,
       href: "/trainings/5am-club",
       featured: false
     },
     {
       icon: TrendingUp,
       title: "Habit Mastery",
-      description: "Build powerful habits that will transform your life and help you achieve your goals consistently.",
+      image: habitMasteryImage,
       href: "/trainings/habit-mastery",
       featured: false
     },
     {
       icon: TrendingUp,
       title: "Millionaire Mind Unlimited",
-      description: "Develop the mindset and habits of successful millionaires to create unlimited wealth and abundance.",
+      image: millionaireMindImage,
       href: "/trainings/millionaire-mind",
+      featured: false
+    },
+    {
+      icon: Heart,
+      title: "Emotional Intelligence",
+      image: emotionalIntelligenceImage,
+      href: "/other-trainings/emotional-intelligence",
       featured: false
     }
   ];
 
   const otherTrainings = [
-    {
-      icon: Heart,
-      title: "Emotional Intelligence",
-      description: "Develop high emotional intelligence to become a better leader, speaker, and person in all areas of life.",
-      href: "/other-trainings/emotional-intelligence"
-    },
     {
       icon: Heart,
       title: "Love Yourself & Heal Yourself",
@@ -169,8 +165,9 @@ const TrainingsSection = () => {
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>POWER OF SUBCONSCIOUS MIND</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>MIND POWER UNLIMITED</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>WORLD CLASS MORNING RITUALS</strong></li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>MIND MASTERY</strong></li>
-                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>MILLIONAIRE MIND UNLIMITED</strong></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>HOOPONOPONO FOR HEALING</strong></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>EMOTIONAL FREEDOM TECHNIQUE</strong></li>
+                  <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>EMOTIONAL INTELLIGENCE</strong></li>
                   <li className="flex items-center"><span className="w-2 h-2 bg-primary rounded-full mr-3"></span><strong>HABIT MASTERY</strong></li>
                 </ul>
               </div>
@@ -204,10 +201,10 @@ const TrainingsSection = () => {
             <div className="bg-card p-6 rounded-xl shadow-lg">
               <h3 className="text-3xl font-bold mb-4 gradient-text">LAW OF ATTRACTION</h3>
               <p className="text-muted-foreground leading-relaxed">
-                <strong>Your thoughts have the power to manifest your life.</strong> In universe everything is vibration, So increasing your vibration will allow you to experience, your connection with universal power house then you can manifest whatever you want in you life in area like <strong>career/business, relationship, health/appearance, spiritual journey and contribution.</strong>
+                <strong>Your thoughts hold the power to shape your reality.</strong> Everything in the universe is vibration — and by raising your vibration, you strengthen your connection with the universal powerhouse. This alignment empowers you to manifest what you truly desire in every area of life: <strong>career and business, relationships, health and appearance, spiritual growth, and contribution.</strong>
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
-                <strong>Join with us and learn about "Mastering law of attraction" and bring greatness in your life too.</strong>
+                <strong>Join us to learn Mastering the Law of Attraction and bring greatness into your life.</strong>
               </p>
               <Link to="/trainings/law-of-attraction" className="inline-block mt-6">
                 <Button className="w-full lg:w-auto">
@@ -224,12 +221,15 @@ const TrainingsSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="bg-card p-6 rounded-xl shadow-lg">
               <h3 className="text-3xl font-bold mb-4 gradient-text">NLP</h3>
-              <h4 className="text-xl font-semibold mb-4 text-foreground italic">HEAL YOUR MIND TO HEAL YOUR LIFE</h4>
+              <h4 className="text-xl font-semibold mb-4 text-foreground italic">HEAL YOUR MIND, HEAL YOUR LIFE</h4>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong>NLP is the ultimate scientific method to get peak performance in Health, Wealth, Happiness, Business, Relation ships.</strong> We often delete, distort and generalize information before we communicate and we also create generalized meanings, there by we invite the problems unknowingly, most of the times.
+                <strong>NLP (Neuro Linguistic Programming) is a powerful scientific method to achieve peak performance in every area of life — health, wealth, happiness, business, and relationships.</strong>
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Language may not always describe the reality, just as <strong>"MAP IS NOT TERRITORY".</strong> NLP tools and Techniques will help to understand the mind default settings you have since years, then teaches us to rewire them with new patterns to create the abundance in health, wealth, success, happiness, love, energy, focus and confidence.
+                Our mind often deletes, distorts, and generalizes information before we communicate. In doing so, we create limiting meanings and unknowingly invite problems into our lives.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                As the saying goes, <strong>"The map is not the territory."</strong> Language does not always reflect reality. NLP tools and techniques help you uncover the default mental patterns you've been running for years and empower you to rewire them with new, resourceful patterns. This transformation unlocks abundance in health, wealth, success, happiness, love, energy, focus, and confidence.
               </p>
               <Link to="/trainings/nlp" className="inline-block mt-6">
                 <Button className="w-full lg:w-auto">
@@ -259,16 +259,34 @@ const TrainingsSection = () => {
             <Link key={index} to={training.href} className="block">
               <Card className={`group hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-0 shadow-card ${training.featured ? 'ring-2 ring-primary/20' : ''}`}>
                 <CardContent className="p-6">
-                  {training.tag && (
+                  {(training as any).tag && (
                     <Badge variant="secondary" className="mb-4 bg-gradient-to-r from-primary to-primary-glow text-primary-foreground">
-                      {training.tag}
+                      {(training as any).tag}
                     </Badge>
                   )}
-                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-primary-glow rounded-lg mb-4 group-hover:scale-110 transition-transform">
-                    <training.icon className="h-6 w-6 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-foreground">{training.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6">{training.description}</p>
+                  {training.image ? (
+                    <div className="mb-4 overflow-hidden rounded-lg relative">
+                      <img 
+                        src={training.image} 
+                        alt={training.title}
+                        className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {training.title === "Mind Mastery" && (
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+                          <h3 className="text-white text-xl md:text-2xl font-bold text-center px-4">
+                            Mind Mastery coaching
+                          </h3>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-primary to-primary-glow rounded-lg mb-4 group-hover:scale-110 transition-transform">
+                      <training.icon className="h-6 w-6 text-primary-foreground" />
+                    </div>
+                  )}
+                  {(training as any).description && (
+                    <p className="text-muted-foreground leading-relaxed mb-6">{(training as any).description}</p>
+                  )}
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />

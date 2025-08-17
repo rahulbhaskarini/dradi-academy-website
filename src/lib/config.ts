@@ -1,7 +1,7 @@
 // Site configuration constants
 export const SITE_CONFIG = {
   // Contact Information
-  phone: "+918978544550",
+  phone: "+916385733491",
   email: "contact@dradiacademy.com", // You can add email here when needed
   
   // Location
@@ -32,7 +32,7 @@ export const getPhoneLink = () => `tel:${SITE_CONFIG.phone}`;
 
 // Helper function to get display phone (with formatting)
 export const getDisplayPhone = () => {
-  // Format +918978544550 to +91 8978 544 550 for better readability
+  // Format +916385733491 to +91 6385 733 491 for better readability
   const phone = SITE_CONFIG.phone;
   return phone.replace(/(\+91)(\d{4})(\d{3})(\d{3})/, '$1 $2 $3 $4');
 };

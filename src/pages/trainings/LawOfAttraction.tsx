@@ -48,52 +48,21 @@ const LawOfAttraction = () => {
             </CardHeader>
             <CardContent>
               <p className="mb-4">
-                Your thoughts have the power to manifest your life. In universe everything is vibration, so increasing your vibration of thoughts, words, feelings, beliefs and actions- will allow you to experience, your connection with universal power house then you can manifest whatever you want in your life in areas like career/business, relationship, health/appearance, spiritual journey and contribution.
+                Your thoughts have the power to shape your life. Everything in the universe is vibration — and by raising the vibration of your thoughts, words, feelings, beliefs, and actions, you can strengthen your connection with the universal powerhouse. This alignment enables you to manifest your desires in every area of life: career and business, relationships, health and appearance, spiritual growth, and contribution.
               </p>
               <p className="mb-4">
-                You can create whatever you thought-off in your life. If the above, rings true for you and looking for right platform/training institute, you are there right now - in this movement, please join with us and learn about "Mastering law of attraction" and bring greatness in your life by transforming your self.
+                You have the ability to create whatever you envision. If this resonates with you and you've been seeking the right platform to transform yourself, you've found it — right here, in this very moment. Join us to learn Mastering the Law of Attraction and bring greatness into your life.
               </p>
               <Link to="/contact?training=Law%20of%20Attraction%20-%20LOA">
                 <Button variant="cta" size="lg" asChild>
                   <span>
-                    <Mail className="h-4 w-4 mr-2" />
-                    Mail us to register
+                    <Phone className="h-4 w-4 mr-2" />
+                    Contact us for Registrations
                   </span>
                 </Button>
               </Link>
             </CardContent>
           </Card>
-        </div>
-
-        {/* Key Areas of Transformation */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-center mb-8">Key Areas of Transformation</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <CardTitle>Career & Business</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Attract success and abundance in your professional life through focused intention and aligned action.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Relationships</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Manifest meaningful connections and strengthen existing relationships through positive energy alignment.</p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <CardTitle>Health & Wellness</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>Create vibrant health and well-being by aligning your thoughts with your body's natural healing power.</p>
-              </CardContent>
-            </Card>
-          </div>
         </div>
 
         {/* Keywords & Tags */}

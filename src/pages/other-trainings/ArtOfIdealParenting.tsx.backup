@@ -303,8 +303,8 @@ const ArtOfIdealParenting = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
               <Link to="/contact">
-                <Mail className="mr-2 h-4 w-4" />
-                Mail Us to Register
+                <Phone className="mr-2 h-4 w-4" />
+                Contact us for Registrations
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline">
@@ -344,8 +344,8 @@ export default ArtOfIdealParenting;
                   <Link to="/contact?training=Art%20of%20Ideal%20Parenting">
                     <Button variant="cta" size="lg" asChild>
                       <span>
-                        <Mail className="h-4 w-4 mr-2" />
-                        Mail us to Register
+                        <Phone className="h-4 w-4 mr-2" />
+                        Contact us for Registrations
                       </span>
                     </Button>
                   </Link>

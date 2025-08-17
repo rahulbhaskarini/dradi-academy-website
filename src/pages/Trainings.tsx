@@ -34,7 +34,7 @@ const Trainings = () => {
     {
       icon: Target,
       title: "Law of Attraction - LOA",
-      description: "Your thoughts have the power to manifest your life. Learn to increase your vibration and connect with universal power to manifest whatever you want in career/business, relationship, health/appearance, spiritual journey and contribution.",
+      description: "Your thoughts hold the power to shape your reality. Everything in the universe is vibration — and by raising your vibration, you strengthen your connection with the universal powerhouse. This alignment empowers you to manifest what you truly desire in every area of life: career and business, relationships, health and appearance, spiritual growth, and contribution.",
       href: "/trainings/law-of-attraction",
       featured: true,
       tag: "Most Popular"
@@ -67,6 +67,13 @@ const Trainings = () => {
       title: "Mind Mastery",
       description: "Master your mind and thoughts to create the reality you desire with advanced techniques.",
       href: "/trainings/mind-mastery",
+      featured: false
+    },
+    {
+      icon: Brain,
+      title: "Rewire Your Mind",
+      description: "Transform your life by rewiring your mind. Break old patterns, create new neural pathways, and recreate your reality based on Dr. Joe Dispenza's teachings.",
+      href: "/trainings/rewire-your-mind",
       featured: false
     },
     {
@@ -229,10 +236,10 @@ const Trainings = () => {
             <div className="bg-card p-6 rounded-xl shadow-lg">
               <h3 className="text-3xl font-bold mb-4 gradient-text">LAW OF ATTRACTION</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong>Your thoughts have the power to manifest your life.</strong> In universe everything is vibration, So increasing your vibration will allow you to experience, your connection with universal power house then you can manifest whatever you want in you life in area like <strong>career/business, relationship, health/appearance, spiritual journey and contribution.</strong>
+                <strong>Your thoughts hold the power to shape your reality.</strong> Everything in the universe is vibration — and by raising your vibration, you strengthen your connection with the universal powerhouse. This alignment empowers you to manifest what you truly desire in every area of life: <strong>career and business, relationships, health and appearance, spiritual growth, and contribution.</strong>
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                <strong>Join with us and learn about "Mastering law of attraction" and bring greatness in your life too.</strong>
+                <strong>Join us to learn Mastering the Law of Attraction and bring greatness into your life.</strong>
               </p>
               <Link to="/trainings/law-of-attraction" className="inline-block">
                 <Button className="w-full lg:w-auto">
@@ -251,12 +258,15 @@ const Trainings = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="bg-card p-6 rounded-xl shadow-lg">
               <h3 className="text-3xl font-bold mb-4 gradient-text">NLP</h3>
-              <h4 className="text-xl font-semibold mb-4 text-foreground italic">HEAL YOUR MIND TO HEAL YOUR LIFE</h4>
+              <h4 className="text-xl font-semibold mb-4 text-foreground italic">HEAL YOUR MIND, HEAL YOUR LIFE</h4>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                <strong>NLP is the ultimate scientific method to get peak performance in Health, Wealth, Happiness, Business, Relation ships.</strong> We often delete, distort and generalize information before we communicate and we also create generalized meanings, there by we invite the problems unknowingly, most of the times.
+                <strong>NLP (Neuro Linguistic Programming) is a powerful scientific method to achieve peak performance in every area of life — health, wealth, happiness, business, and relationships.</strong>
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Our mind often deletes, distorts, and generalizes information before we communicate. In doing so, we create limiting meanings and unknowingly invite problems into our lives.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Language may not always describe the reality, just as <strong>"MAP IS NOT TERRITORY".</strong> NLP tools and Techniques will help to understand the mind default settings you have since years, then teaches us to rewire them with new patterns to create the abundance in health, wealth, success, happiness, love, energy, focus and confidence.
+                As the saying goes, <strong>"The map is not the territory."</strong> Language does not always reflect reality. NLP tools and techniques help you uncover the default mental patterns you've been running for years and empower you to rewire them with new, resourceful patterns. This transformation unlocks abundance in health, wealth, success, happiness, love, energy, focus, and confidence.
               </p>
               <Link to="/trainings/nlp" className="inline-block">
                 <Button className="w-full lg:w-auto">
