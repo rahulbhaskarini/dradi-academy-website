@@ -24,7 +24,7 @@ import photo18 from "@/assets/Gallery/photo_2025-08-17 18.30.30.jpeg";
 import photo19 from "@/assets/Gallery/photo_2025-08-17 18.30.45.jpeg";
 import photo20 from "@/assets/Gallery/photo_2025-08-17 18.30.51.jpeg";
 import photo22 from "@/assets/Gallery/photo_2025-08-17 18.31.11.jpeg";
-import photo23 from "@/assets/Gallery/photo_2025-08-17 18.31.19.jpeg";
+
 import photo24 from "@/assets/Gallery/photo_2025-08-17 18.41.14.jpeg";
 import photo25 from "@/assets/Gallery/photo_2025-08-17 18.41.15.jpeg";
 import photo26 from "@/assets/Gallery/photo_2025-08-17 18.41.18.jpeg";
@@ -163,11 +163,6 @@ const Gallery = () => {
       src: photo22,
       alt: "Dr. ADi Academy Workshop",
       title: "Professional Growth Mastery"
-    },
-    {
-      src: photo23,
-      alt: "Dr. ADi Academy Event",
-      title: "Peak Performance Summit"
     },
     {
       src: photo24,
