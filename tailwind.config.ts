@@ -8,6 +8,7 @@ export default {
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
 	],
+	plugins: [require('@tailwindcss/typography')],
 	prefix: "",
 	theme: {
 		container: {
@@ -126,5 +127,8 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require('@tailwindcss/typography')
+	],
 } satisfies Config;

@@ -19,6 +19,10 @@ import SubconsciousMind from "./pages/trainings/SubconsciousMind";
 import MindPower from "./pages/trainings/MindPower";
 import MindMastery from "./pages/trainings/MindMastery";
 import FiveAMClub from "./pages/trainings/FiveAMClub";
+
+// Blog Pages
+import BlogIndex from "./pages/BlogIndex";
+import BlogPost from "./pages/BlogPost";
 import HabitMastery from "./pages/trainings/HabitMastery";
 import MillionaireMind from "./pages/trainings/MillionaireMind";
 import RewireYourMind from "./pages/trainings/RewireYourMind";
@@ -78,6 +82,10 @@ const App = () => (
           <Route path="/other-trainings/schools-communities" element={<Navigate to="/other-trainings/school-community-programs" replace />} />
           <Route path="/other-trainings/corporate" element={<Navigate to="/other-trainings/corporate-training" replace />} />
           
+          {/* Blog Routes */}
+          <Route path="/blog" element={<BlogIndex />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

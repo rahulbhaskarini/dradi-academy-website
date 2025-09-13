@@ -22,7 +22,6 @@ const Header = () => {
   }, [isMenuOpen]);
 
   const navigationItems = [
-    { name: "Home", href: "/" },
     { 
       name: "My Story", 
       href: "/my-story" 
@@ -56,18 +55,19 @@ const Header = () => {
       ]
     },
     { name: "Contact Us", href: "/contact" },
-    { name: "Gallery", href: "/gallery" }
+    { name: "Gallery", href: "/gallery" },
+    { name: "Blog", href: "/blog" }
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-32 items-center justify-between">
+        <div className="flex h-24 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+            <Link to="/" className="flex items-center space-x-4 hover:opacity-80 transition-opacity">
               {/* Logo Image */}
-              <div className="relative h-28 w-28 flex items-center justify-center">
+              <div className="relative h-20 w-20 flex items-center justify-center">
                 <img 
                   src="/lovable-uploads/a63c3cc5-2960-4846-b11c-8ea0aaea12ce.png" 
                   alt="Dr. ADi Academy Logo" 
@@ -78,7 +78,7 @@ const Header = () => {
               
               {/* Academy Name */}
               <div className="flex flex-col">
-                <span className="text-lg md:text-xl font-bold gradient-text leading-tight">
+                <span className="text-xl md:text-2xl font-bold gradient-text leading-tight">
                   Dr. ADi Academy
                 </span>
               </div>
@@ -86,29 +86,36 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden lg:flex items-center gap-8 ml-12">
             {navigationItems.map((item) => (
               <div key={item.name} className="relative group">
                 {item.href === "#" ? (
-                  <span className="text-foreground/80 hover:text-foreground transition-colors duration-200 cursor-pointer">
+                  <span className="text-foreground/80 hover:text-foreground transition-colors duration-200 cursor-pointer text-base font-medium">
                     {item.name}
                   </span>
                 ) : (
                   <Link
                     to={item.href}
-                    className="text-foreground/80 hover:text-foreground transition-colors duration-200"
+                    className="text-foreground/80 hover:text-foreground transition-colors duration-200 text-base font-medium flex items-center hover:scale-105 transition-transform"
                   >
                     {item.name}
+                    {item.submenu && (
+                      <span className="ml-1 relative top-[1px] transition duration-200 group-hover:rotate-180">
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 8.5L2 4.5H10L6 8.5Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                    )}
                   </Link>
                 )}
                 {item.submenu && (
-                  <div className="absolute left-0 top-full mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
-                    <div className="bg-card shadow-xl rounded-lg border py-2">
+                  <div className="absolute left-0 top-full mt-1 w-72 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="bg-card shadow-xl rounded-lg border py-2 mt-1">
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.name}
                           to={subItem.href}
-                          className="block px-4 py-2 text-sm text-foreground/80 hover:text-foreground hover:bg-muted/50 transition-colors"
+                          className="block px-5 py-2.5 text-base text-foreground/80 hover:text-foreground hover:bg-accent/50 transition-colors font-normal"
                         >
                           {subItem.name}
                         </Link>
@@ -120,20 +127,17 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Contact Info & CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a 
-              href={getPhoneLink()}
-              className="flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Call us"
-            >
-              <Phone className="h-4 w-4" />
-              <span>{getDisplayPhone()}</span>
-            </a>
+          {/* Action Buttons */}
+          <div className="hidden lg:flex items-center gap-4">
             <ThemeToggle />
-            <Button variant="cta" size="lg" asChild>
-              <Link to="/contact">Enroll Now</Link>
-            </Button>
+            <div className="flex items-center gap-4">
+              <Button variant="outline" size="lg" asChild>
+                <a href="https://learn.dradiacademy.com" target="_blank" rel="noopener noreferrer">Login</a>
+              </Button>
+              <Button variant="cta" size="lg" asChild>
+                <Link to="/trainings">Enroll Now</Link>
+              </Button>
+            </div>
           </div>
 
           {/* Mobile menu button and theme toggle */}
@@ -185,12 +189,11 @@ const Header = () => {
                       )}
                       {item.submenu && (
                         <div className="ml-4 space-y-1 mt-2">
-                          {item.submenu.map((subItem) => (
-                            <Link
-                              key={subItem.name}
-                              to={subItem.href}
-                              onClick={() => setIsMenuOpen(false)}
-                              className="block px-3 py-2 text-sm text-foreground/70 hover:text-foreground hover:bg-muted/50 rounded-md transition-colors"
+                          {item.submenu.map((subItem) => (                        <Link
+                          key={subItem.name}
+                          to={subItem.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="block px-4 py-2.5 text-base text-foreground/70 hover:text-foreground hover:bg-muted/50 rounded-md transition-colors"
                             >
                               {subItem.name}
                             </Link>
@@ -200,18 +203,15 @@ const Header = () => {
                     </div>
                   ))}
                   <div className="pt-4 border-t border-border/40">
-                    <a 
-                      href={getPhoneLink()}
-                      className="flex items-center space-x-2 px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors rounded-md"
-                      aria-label="Call us"
-                    >
-                      <Phone className="h-4 w-4" />
-                      <span>{getDisplayPhone()}</span>
-                    </a>
                     <div className="px-3 py-2">
-                      <Button variant="cta" size="lg" className="w-full" asChild>
-                        <Link to="/contact" onClick={() => setIsMenuOpen(false)}>Enroll Now</Link>
-                      </Button>
+                      <div className="flex flex-col gap-3">
+                        <Button variant="outline" size="lg" className="w-full" asChild>
+                          <a href="https://learn.dradiacademy.com" target="_blank" rel="noopener noreferrer">Login</a>
+                        </Button>
+                        <Button variant="cta" size="lg" className="w-full" asChild>
+                          <Link to="/trainings" onClick={() => setIsMenuOpen(false)}>Enroll Now</Link>
+                        </Button>
+                      </div>
                     </div>
                   </div>
                 </nav>
